@@ -1,4 +1,4 @@
-#created by Leena on 28-May-2021 as part of HW2
+#created by Leena on 28-May-2021 as part of HW2 Q2
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -16,7 +16,9 @@ search.clear()
 search.send_keys('Cancel order')
 search.send_keys(Keys.RETURN)
 
-actual_result = driver.find_element(By.XPATH, "//div[@class = 'a-box a-spacing-extra-large a-color--background answer-box answer-box-t1']//div[@class ='a-box-inner']//div[@class='help-content']//a[@name='GUID-159D403A-3B08-477C-88E3-58C737822D49']/../h1").text
+#actual_result = driver.find_element(By.XPATH, "//div[@class = 'a-box a-spacing-extra-large a-color--background answer-box answer-box-t1']//div[@class ='a-box-inner']//div[@class='help-content']//a[@name='GUID-159D403A-3B08-477C-88E3-58C737822D49']/../h1").text
+# added below as part of comments from Lana
+actual_result = driver.find_element(By.XPATH, "//div[@class='help-content']//h1").text
 print(f'Actual result : {actual_result}')
 
 expected_result = 'Cancel Items or Orders'
