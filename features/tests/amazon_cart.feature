@@ -8,19 +8,19 @@ Feature: Test Amazon Cart
     When Click on cart icon
     Then "Your Amazon Cart is empty" message is displayed
 
-#Q4
-Scenario: User can add a product to the cart
-  Given Open Amazon page
-  When Search for coffee mug
-  And Click on the first product
-  And Click on Add to cart button
-  Then Verify cart has 1 item
+  Scenario: User can add a product to the cart
+    Given Open Amazon page
+    When Search for coffee mug
+    And Click on the first product
+    And Click on Add to cart button
+    Then Verify cart has 1 item
 
-  """
-Scenario: User can add a product to the cart
-  Given Open Amazon page
-  When Search for shoes
-  And Click on the first product
-  And Click on Add to cart button
-  Then Verify cart has 1 item
-"""
+#
+#  Scenario: User can add a product to the cart
+#    Given Open Amazon page
+#    When Search for shoes
+#    And Click on the first product
+#    And Click on Add to cart button
+#    Then Verify cart has 1 item
+
+
